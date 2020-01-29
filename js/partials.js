@@ -18,5 +18,5 @@ function loadfooter() {
 }
 $(document).on("ready", function () {
     loadHeader();
-    loadHeader();
+    loadfooter()
 })
