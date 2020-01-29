@@ -1,5 +1,3 @@
-loadScripts();
-
 function loadHeader() {
     fetch("./header.html")
         .then(response => {
