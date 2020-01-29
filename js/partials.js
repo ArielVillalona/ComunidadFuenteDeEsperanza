@@ -1,3 +1,5 @@
+loadScripts();
+
 function loadHeader() {
     fetch("./header.html")
         .then(response => {
@@ -27,7 +29,6 @@ function loadScripts() {
 }
 
 $(document).on("ready", function () {
-    loadScripts();
     loadHeader();
     loadHeader();
 })
