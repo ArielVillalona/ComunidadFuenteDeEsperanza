@@ -16,7 +16,27 @@ function loadfooter() {
             document.querySelector("footer").innerHTML = data;
         });
 }
+function loadHead() {
+    fetch("./head.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector("head").innerHTML = data;
+        });
+}
+function loadSectionUNO() {
+    fetch("./SectionUNO.html")
+        .then(response => {
+            return response.text()
+        })
+        .then(data => {
+            document.querySelector(".fisrtSecction").innerHTML = data;
+        });
+}
+loadHead();
 $(document).on("ready", function () {
     loadHeader();
-    loadfooter()
+    loadSectionUNO()
+    loadfooter();
 })
