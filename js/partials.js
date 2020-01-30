@@ -34,7 +34,6 @@ function loadSectionUNO() {
             document.querySelector(".fisrtSecction").innerHTML = data;
         });
 }
-loadHead();
 $(document).on("ready", function () {
     loadHeader();
     loadSectionUNO()
