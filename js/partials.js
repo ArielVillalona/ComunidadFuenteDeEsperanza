@@ -36,6 +36,5 @@ function loadSectionUNO() {
 }
 $(document).on("ready", function () {
     loadHeader();
-    loadSectionUNO()
     loadfooter();
 })
